@@ -1,0 +1,54 @@
+homeassistant: false
+frontend:
+  enable: true
+  port: 8081
+permit_join: true
+mqtt:
+  base_topic: zigbee2mqtt_maison2
+  server: mqtt://localhost:1883
+serial:
+  adapter: zstack
+  port: tcp://192.168.0.102:6638
+  baudrate: 115200
+  disable_led: false
+advanced:
+  network_key:
+    - 165
+    - 166
+    - 19
+    - 236
+    - 99
+    - 8
+    - 23
+    - 32
+    - 139
+    - 81
+    - 112
+    - 172
+    - 120
+    - 32
+    - 208
+    - 39
+  pan_id: 39733
+  ext_pan_id:
+    - 155
+    - 153
+    - 134
+    - 65
+    - 145
+    - 33
+    - 229
+    - 151
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+  transmit_power: 20
+devices:
+  '0xa4c138da46a53170':
+    friendly_name: '0xa4c138da46a53170'
+  '0xa4c1386dcee8e9db':
+    friendly_name: '0xa4c1386dcee8e9db'
+  '0xdc8e95fffe559269':
+    friendly_name: '0xdc8e95fffe559269'
+  '0xa4c138e9857f7953':
+    friendly_name: '0xa4c138e9857f7953'
